@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="The portfolio of Abhijith Sivakumar Rekha — certificates, mini projects, web development learning, and CV." />
+  <title>Abhijith Sivakumar Rekha | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--bg:#0b1020;--panel:#121a2d;--panel2:#172139;--text:#eaf0ff;--muted:#a1acc4;--line:rgba(194,210,255,.14);--cyan:#63e5ff;--blue:#8da4ff;--green:#82f0c8;--violet:#c7a5ff;--orange:#ffc98d;--radius:20px;--mono:'DM Mono',monospace;--sans:'Manrope',system-ui,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:96px}body{margin:0;background:radial-gradient(ellipse at 15% 5%,rgba(74,109,255,.18),transparent 35%),radial-gradient(ellipse at 95% 18%,rgba(51,216,228,.11),transparent 28%),var(--bg);color:var(--text);font-family:var(--sans);line-height:1.65}a{color:inherit;text-decoration:none}button,a{ -webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:4px}.wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto}.mono{font-family:var(--mono);letter-spacing:.05em}.eyebrow{color:var(--cyan);font:500 .78rem var(--mono);letter-spacing:.16em;text-transform:uppercase}.muted{color:var(--muted)}
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(11,16,32,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.03em;white-space:nowrap}.brand-mark{display:grid;place-items:center;width:39px;height:39px;border-radius:13px;color:#091321;background:linear-gradient(140deg,var(--cyan),var(--blue));font-weight:900;box-shadow:0 7px 30px rgba(99,229,255,.18)}.navlinks{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.navlinks a{color:var(--muted);font-size:.81rem;font-weight:700;transition:color .2s}.navlinks a:hover{color:var(--cyan)}.nav-cta{border:1px solid rgba(99,229,255,.35);padding:9px 13px;border-radius:999px;color:var(--cyan)!important}
+    .hero{padding:88px 0 66px}.hero-grid{display:grid;grid-template-columns:1.4fr .75fr;gap:45px;align-items:center}.hero h1{font-size:clamp(2.9rem,6vw,5.5rem);line-height:1.04;letter-spacing:-.075em;margin:18px 0 24px;max-width:760px}.gradient{background:linear-gradient(100deg,var(--cyan),var(--blue) 48%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:1.1rem;color:#c0cae0;max-width:650px;line-height:1.85}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 17px;border-radius:12px;font-weight:800;font-size:.9rem;border:1px solid var(--line);background:rgba(255,255,255,.035);transition:transform .2s,border-color .2s,background .2s}.btn:hover{transform:translateY(-2px);border-color:rgba(99,229,255,.55)}.btn.primary{background:var(--cyan);color:#091321;border-color:var(--cyan)}.hero-card{background:linear-gradient(150deg,rgba(99,229,255,.11),rgba(141,164,255,.08)),var(--panel);border:1px solid rgba(153,182,255,.2);border-radius:28px;padding:28px;box-shadow:0 22px 90px rgba(0,0,0,.2);position:relative;overflow:hidden}.hero-card:before{content:'';position:absolute;width:180px;height:180px;right:-70px;top:-70px;border:1px solid rgba(99,229,255,.3);border-radius:50%;box-shadow:0 0 0 20px rgba(99,229,255,.03),0 0 0 42px rgba(99,229,255,.025)}.avatar{width:75px;height:75px;border-radius:23px;display:grid;place-items:center;background:linear-gradient(135deg,#63e5ff,#8da4ff);color:#091321;font-size:1.65rem;font-weight:900;letter-spacing:-.06em;margin-bottom:22px}.hero-card h2{font-size:1.3rem;margin:0 0 7px}.hero-card p{color:var(--muted);font-size:.92rem;margin:0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:25px}.stat{padding:13px 10px;border-radius:13px;background:rgba(255,255,255,.035);border:1px solid var(--line)}.stat strong{display:block;font-size:1.45rem;line-height:1.35}.stat span{color:var(--muted);font-size:.7rem}
+    section{padding:68px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:28px}.section-head h2{margin:8px 0 0;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.16;letter-spacing:-.06em}.section-head p{max-width:500px;color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{border:1px solid var(--line);background:linear-gradient(150deg,rgba(255,255,255,.035),rgba(255,255,255,.012)),var(--panel);border-radius:var(--radius);padding:23px;min-width:0;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-3px);border-color:rgba(99,229,255,.32)}.card h3{margin:12px 0 8px;font-size:1.08rem;line-height:1.4;letter-spacing:-.025em}.card p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.8}.iconbox{width:45px;height:45px;display:grid;place-items:center;border-radius:14px;background:rgba(99,229,255,.1);border:1px solid rgba(99,229,255,.18);font-size:1.25rem}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}.tag{font:400 .7rem var(--mono);color:#cbd7f1;background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:999px;padding:5px 9px}.card-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.textlink{color:var(--cyan);font-size:.84rem;font-weight:800}.textlink:hover{text-decoration:underline}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.about-copy{font-size:1rem;line-height:1.95;color:#c0cae0}.list{display:grid;gap:10px;margin-top:18px}.list-item{display:flex;gap:12px;align-items:flex-start;color:#d6e0f5;font-size:.9rem}.check{color:var(--green);font-weight:900}
+    .cert-card{display:flex;flex-direction:column}.cert-card .issuer{font:500 .72rem var(--mono);color:var(--cyan);text-transform:uppercase;letter-spacing:.08em}.cert-card .date{color:var(--muted);font-size:.8rem;margin-top:10px}.cert-card .card-links{margin-top:auto;padding-top:18px}.mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.project-card{display:flex;flex-direction:column}.project-card .project-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.project-num{font:500 .72rem var(--mono);color:var(--muted);letter-spacing:.12em}.project-card ul{padding-left:18px;margin:13px 0 0;color:#c1cde4;font-size:.85rem;line-height:1.85}.project-card .card-links{margin-top:auto;padding-top:18px}.tone-cyan .iconbox{background:rgba(99,229,255,.1)}.tone-violet .iconbox{background:rgba(199,165,255,.11)}.tone-green .iconbox{background:rgba(130,240,200,.1)}.tone-orange .iconbox{background:rgba(255,201,141,.1)}
+    .odin-feature{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:stretch}.odin-panel{padding:30px;border-radius:24px;border:1px solid rgba(141,164,255,.22);background:linear-gradient(145deg,rgba(141,164,255,.1),rgba(99,229,255,.045)),var(--panel)}.topic-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:24px}.topic{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025);font-size:.82rem;color:#d7e1f7}.resource-card{display:flex;flex-direction:column;justify-content:space-between;gap:18px}.resource-card .btn{width:100%;margin-top:10px}.cv-panel{display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px;padding:28px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(110deg,rgba(99,229,255,.09),rgba(141,164,255,.06)),var(--panel)}.cv-panel h3{font-size:1.35rem;margin:0 0 5px}.cv-panel p{margin:0;color:var(--muted)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.contact-box{padding:23px;border-radius:18px;border:1px solid var(--line);background:var(--panel)}.contact-box .eyebrow{margin-bottom:10px}.footer{padding:28px 0 40px;color:var(--muted);font-size:.8rem}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.backtop{position:fixed;bottom:20px;right:20px;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--cyan);color:#081321;font-size:1.2rem;font-weight:900;box-shadow:0 8px 30px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .2s}.backtop.show{opacity:1;pointer-events:auto}
+    @media(max-width:980px){.navlinks{gap:12px}.navlinks a{font-size:.75rem}.hero-grid,.about-grid,.odin-feature{grid-template-columns:1fr}.hero-card{max-width:580px}.grid,.mini-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head{align-items:start;flex-direction:column}}
+    @media(max-width:650px){.wrap{width:min(100% - 28px,1160px)}.nav{align-items:flex-start;padding:14px 0;flex-direction:column}.navlinks{gap:8px 14px}.hero{padding:58px 0 48px}.hero h1{font-size:3.1rem}.stats{grid-template-columns:repeat(3,1fr)}.grid,.mini-grid,.topic-list,.contact-grid{grid-template-columns:1fr}.cv-panel{grid-template-columns:1fr}.section-head h2{font-size:2rem}section{padding:52px 0}}
+  
+    /* LIGHT, MULTI-COLOUR THEMES — choose one from the header menu */
+    :root{
+      color-scheme:light;
+      --bg:#fff9e7;--panel:#ffffff;--panel2:#fff1c2;--text:#26324a;--muted:#67718a;
+      --line:#f0dba1;--cyan:#ef7d4f;--blue:#6575dc;--green:#279d80;--violet:#a15ec7;--orange:#e8a93a;
+      --radius:20px;--mono:'DM Mono',monospace;--sans:'Manrope',system-ui,sans-serif;
+      --nav-bg:rgba(255,255,255,.92);--shadow:0 12px 34px rgba(45,55,85,.08);--chip:#fff0bd;--hero-a:#ffe69b;--hero-b:#ffd8ca;
+    }
+    html[data-theme="sunshine"]{--bg:#fff9e7;--panel:#fff;--panel2:#fff1c2;--text:#26324a;--muted:#67718a;--line:#f0dba1;--cyan:#ef7d4f;--blue:#6575dc;--green:#279d80;--violet:#a15ec7;--orange:#e8a93a;--nav-bg:rgba(255,255,255,.92);--chip:#fff0bd;--hero-a:#ffe69b;--hero-b:#ffd8ca}
+    html[data-theme="ocean"]{--bg:#eefaff;--panel:#fff;--panel2:#dcf5ff;--text:#18354b;--muted:#567386;--line:#bfe7f4;--cyan:#087fa9;--blue:#6575d8;--green:#168c79;--violet:#775ec6;--orange:#d88427;--nav-bg:rgba(255,255,255,.93);--chip:#e0f8ff;--hero-a:#a9e6ff;--hero-b:#c7fff0}
+    html[data-theme="lavender"]{--bg:#f8f2ff;--panel:#fff;--panel2:#eee0ff;--text:#34294b;--muted:#76658f;--line:#e4d1fa;--cyan:#8954ce;--blue:#4b91d1;--green:#368b78;--violet:#b25a97;--orange:#b97824;--nav-bg:rgba(255,255,255,.93);--chip:#f1e7ff;--hero-a:#e8d6ff;--hero-b:#ffd9ed}
+    html[data-theme="peach"]{--bg:#fff4ef;--panel:#fff;--panel2:#ffe4d7;--text:#4a2e2c;--muted:#8a6762;--line:#f5d1c3;--cyan:#d95743;--blue:#8060b5;--green:#27856a;--violet:#9954a4;--orange:#b7790d;--nav-bg:rgba(255,255,255,.93);--chip:#ffebe0;--hero-a:#ffd5c3;--hero-b:#ffe7ad}
+    html[data-theme="mint"]{--bg:#effcf5;--panel:#fff;--panel2:#d9f7e7;--text:#1e4237;--muted:#628477;--line:#c7edda;--cyan:#16845e;--blue:#357ec2;--green:#27896c;--violet:#a452b5;--orange:#ab7419;--nav-bg:rgba(255,255,255,.93);--chip:#dcf8e8;--hero-a:#b8f0d4;--hero-b:#c7efff}
+    html[data-theme="candy"]{--bg:#fff1f7;--panel:#fff;--panel2:#ffe0ef;--text:#47263f;--muted:#93657f;--line:#f5cde2;--cyan:#c52c80;--blue:#7253cd;--green:#218b82;--violet:#974db5;--orange:#ae6d18;--nav-bg:rgba(255,255,255,.93);--chip:#ffe4f1;--hero-a:#ffcee8;--hero-b:#d7e5ff}
+    html[data-theme="citrus"]{--bg:#f9ffed;--panel:#fff;--panel2:#eff7bd;--text:#35401f;--muted:#74805c;--line:#dce9a6;--cyan:#6f8b19;--blue:#287c87;--green:#327b42;--violet:#7060bc;--orange:#bd700c;--nav-bg:rgba(255,255,255,.93);--chip:#f3f9cd;--hero-a:#ebf6a0;--hero-b:#ffe0ad}
+    html[data-theme="berry"]{--bg:#fff1f1;--panel:#fff;--panel2:#ffe1e0;--text:#48263c;--muted:#916879;--line:#f2c8d8;--cyan:#ac2f67;--blue:#5b61c5;--green:#23846f;--violet:#8750aa;--orange:#ae622d;--nav-bg:rgba(255,255,255,.93);--chip:#ffe1ea;--hero-a:#ffceda;--hero-b:#ffe3bb}
+    html[data-theme="sky"]{--bg:#f1f6ff;--panel:#fff;--panel2:#e0ecff;--text:#253857;--muted:#687c9f;--line:#cfddf5;--cyan:#3566bd;--blue:#258b9e;--green:#278572;--violet:#6857c7;--orange:#c8684c;--nav-bg:rgba(255,255,255,.93);--chip:#e3edff;--hero-a:#cbdcff;--hero-b:#c8f5f7}
+    html[data-theme="tropical"]{--bg:#effdfb;--panel:#fff;--panel2:#d3f8ef;--text:#153c3f;--muted:#5e8582;--line:#bdece2;--cyan:#087f74;--blue:#5878bf;--green:#20865d;--violet:#8a4cbe;--orange:#bd6527;--nav-bg:rgba(255,255,255,.93);--chip:#dffaf2;--hero-a:#b5f3e5;--hero-b:#ffe0c5}
+    html[data-theme="rose-gold"]{--bg:#fff6f5;--panel:#fff;--panel2:#fbe5e2;--text:#49323c;--muted:#90717b;--line:#efd2d4;--cyan:#a9546c;--blue:#527da3;--green:#3f806b;--violet:#8a66aa;--orange:#a77824;--nav-bg:rgba(255,255,255,.94);--chip:#fae9e9;--hero-a:#f5d5dc;--hero-b:#ffe9bf}
+    body{background:var(--bg);color:var(--text)}
+    .topbar{background:var(--nav-bg);border-bottom-color:var(--line);box-shadow:0 3px 18px rgba(45,55,85,.05)}
+    .navlinks a{color:var(--muted)}.navlinks a:hover{color:var(--cyan)}.nav-cta{border-color:var(--line);color:var(--cyan)!important}
+    .brand-mark,.avatar{background:linear-gradient(140deg,var(--cyan),var(--blue),var(--violet));color:#fff;box-shadow:0 7px 22px rgba(50,65,105,.13)}
+    .hero h1{color:var(--text)}.gradient{background:linear-gradient(100deg,var(--cyan),var(--blue) 48%,var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead,.about-copy,.list-item,.project-card ul{color:var(--muted)}
+    .hero-card{background:linear-gradient(145deg,var(--panel2),var(--panel));border-color:var(--line);box-shadow:var(--shadow)}
+    .hero-card p{color:var(--muted)}
+    .hero-card:before{border-color:var(--line);box-shadow:0 0 0 20px color-mix(in srgb,var(--cyan) 5%,transparent),0 0 0 42px color-mix(in srgb,var(--blue) 4%,transparent)}
+    section{border-top-color:var(--line)}
+    .card,.contact-box{background:var(--panel);border-color:var(--line);box-shadow:var(--shadow)}
+    .card:hover{border-color:var(--cyan);box-shadow:0 16px 36px rgba(45,55,85,.10)}
+    .card p{color:var(--muted)}
+    .iconbox{background:var(--panel2);border:1px solid var(--line)}
+    .tag{color:var(--text);background:var(--panel2);border-color:var(--line)}
+    .textlink{color:var(--cyan)}
+    .stat{background:var(--panel);border-color:var(--line)}.stat strong{color:var(--cyan)}.stat span{color:var(--muted)}
+    .cert-card .issuer,.eyebrow{color:var(--cyan)}
+    .topic{color:var(--text);background:var(--panel2);border-color:var(--line)}
+    .odin-panel{border-color:var(--line);background:linear-gradient(145deg,var(--panel2),var(--panel))}
+    .cv-panel{border-color:var(--line);background:linear-gradient(110deg,var(--panel2),var(--panel))}
+    .btn{background:var(--panel);border-color:var(--line);color:var(--text)}.btn:hover{border-color:var(--cyan);background:var(--panel2)}
+    .btn.primary{background:var(--cyan);border-color:var(--cyan);color:#fff}.btn.primary:hover{filter:brightness(.96)}
+    .backtop{background:var(--cyan);color:#fff}
+    .theme-picker-wrap{display:flex;align-items:center;gap:8px;flex-shrink:0;font-size:.78rem;font-weight:800;color:var(--muted)}
+    .theme-picker-wrap select{max-width:144px;border:1px solid var(--line);border-radius:11px;background:var(--panel);color:var(--text);font:700 .78rem var(--sans);padding:9px 10px;cursor:pointer;box-shadow:0 2px 8px rgba(30,40,70,.04)}
+    .theme-picker-wrap select:focus{outline:3px solid var(--violet);outline-offset:2px}
+    @media(max-width:980px){.nav{flex-wrap:wrap}.theme-picker-wrap{margin-left:auto}.navlinks{order:3;width:100%}}
+    @media(max-width:650px){.theme-picker-wrap{margin-left:0}.theme-picker-wrap select{max-width:none}.navlinks{order:2}.theme-picker-wrap{order:3}}
+
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Back to home"><span class="brand-mark">AS</span><span>Abhijith <span class="muted">/ Portfolio</span></span></a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#certificates">Certificates</a><a href="#projects">Mini Projects</a><a href="#odin">Odin Project</a><a href="#cv">CV</a><a href="#contact" class="nav-cta">Contact</a>
+      </div>
+      <div class="theme-picker-wrap">
+        <label for="themePicker">🎨 Theme</label>
+        <select id="themePicker" aria-label="Choose a website colour theme">
+          <option value="sunshine">01 · Sunshine</option>
+          <option value="ocean">02 · Ocean</option>
+          <option value="lavender">03 · Lavender</option>
+          <option value="peach">04 · Peach</option>
+          <option value="mint">05 · Mint</option>
+          <option value="candy">06 · Candy</option>
+          <option value="citrus">07 · Citrus</option>
+          <option value="berry">08 · Berry</option>
+          <option value="sky">09 · Sky</option>
+          <option value="tropical">10 · Tropical</option>
+          <option value="rose-gold">11 · Rose Gold</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <div class="hero wrap">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Student · Technology learner · Project builder</div>
+          <h1>Learning by building.<br><span class="gradient">Growing through projects.</span></h1>
+          <p class="lead">Welcome to my portfolio. This is where I collect my course certificates, mini-project ideas, web development learning, and selected work across programming, AI, and embedded systems.</p>
+          <div class="hero-actions"><a class="btn primary" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a><a class="btn" href="#certificates">View certificates</a><a class="btn" href="#cv">Open my CV</a></div>
+        </div>
+        <aside class="hero-card" aria-label="Profile summary">
+          <div class="avatar" aria-hidden="true">ASR</div>
+          <div class="eyebrow">A little about me</div>
+          <h2>Abhijith Sivakumar Rekha</h2>
+          <p>Student at Riga Nordic University, exploring web technologies and practical software projects.</p>
+          <div class="stats"><div class="stat"><strong>6</strong><span>Course certificates</span></div><div class="stat"><strong>11</strong><span>Mini-project ideas</span></div><div class="stat"><strong>1</strong><span>Odin course deck</span></div></div>
+        </aside>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">01 / About me</div><h2>A portfolio of what I'm learning</h2></div><p>Designed to make my learning journey, coursework, and project interests easy to explore in one place.</p></div>
+        <div class="about-grid">
+          <article class="card"><p class="about-copy">I'm Abhijith Sivakumar Rekha. I am building practical skills through structured online courses, web-development lessons, and project-based learning. My interests include creating websites, learning programming fundamentals, exploring AI-powered tools, and understanding how sensors and embedded systems can solve real-world problems.</p><p class="about-copy" style="margin-bottom:0">This website brings together the certificates I have completed, mini-project concepts I have explored, and learning resources I use as I continue developing my technical skills.</p></article>
+          <article class="card"><div class="eyebrow">Current learning areas</div><div class="list"><div class="list-item"><span class="check">✓</span><span>Web development: HTML, CSS, page structure, forms, and responsive layouts</span></div><div class="list-item"><span class="check">✓</span><span>Programming fundamentals with Java and Python</span></div><div class="list-item"><span class="check">✓</span><span>AI concepts, prompt writing, and user-focused project ideas</span></div><div class="list-item"><span class="check">✓</span><span>Computer networking, cloud basics, sensors, and embedded systems</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">02 / Skills & interests</div><h2>Tools and topics I’m exploring</h2></div><p>This is a learning-focused overview rather than a claim of expert-level proficiency.</p></div>
+        <div class="grid">
+          <article class="card"><div class="iconbox">⌘</div><h3>Web technologies</h3><p>HTML page structure, CSS styling, selectors, forms, SVG, Flexbox, Grid, and responsive design.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript basics</span></div></article>
+          <article class="card"><div class="iconbox">{ }</div><h3>Programming</h3><p>Learning to break problems into steps, work with data, and write programs in beginner-friendly languages.</p><div class="tags"><span class="tag">Java</span><span class="tag">Python</span></div></article>
+          <article class="card"><div class="iconbox">✦</div><h3>AI & creative tools</h3><p>Exploring prompt engineering and ideas that combine text generation, image understanding, and interactive experiences.</p><div class="tags"><span class="tag">Prompt engineering</span><span class="tag">AI concepts</span></div></article>
+          <article class="card"><div class="iconbox">☁</div><h3>Cloud & networking</h3><p>Building foundational knowledge about cloud services, computer networks, and how connected systems work.</p><div class="tags"><span class="tag">AWS fundamentals</span><span class="tag">Networking</span></div></article>
+          <article class="card"><div class="iconbox">⌁</div><h3>Embedded systems</h3><p>Studying project ideas involving GPIO, sensors, buttons, alerts, displays, and motor or servo control.</p><div class="tags"><span class="tag">Sensors</span><span class="tag">GPIO</span><span class="tag">PWM</span></div></article>
+          <article class="card"><div class="iconbox">↗</div><h3>Project workflow</h3><p>Turning an idea into modules, defining its inputs and outputs, planning tests, and explaining design choices.</p><div class="tags"><span class="tag">Planning</span><span class="tag">Testing</span><span class="tag">Documentation</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">03 / Certificates</div><h2>Courses and learning milestones</h2></div><p>Six completed course certificates are collected here, with a single-file PDF and PowerPoint for review.</p></div>
+        <div class="grid">
+          <article class="card cert-card"><div class="issuer">AWS Training & Certification</div><h3>AWS Cloud Practitioner Essentials</h3><p>Introductory learning on cloud concepts and AWS services.</p><div class="date">Completed March 28, 2026</div></article>
+          <article class="card cert-card"><div class="issuer">Codecademy</div><h3>Learn Java Course</h3><p>Foundational Java programming concepts.</p><div class="date">May 1, 2025</div></article>
+          <article class="card cert-card"><div class="issuer">Google · Coursera</div><h3>Technical Support Fundamentals</h3><p>Introduction to IT support and troubleshooting concepts.</p><div class="date">May 10, 2023</div></article>
+          <article class="card cert-card"><div class="issuer">Google · Coursera</div><h3>The Bits and Bytes of Computer Networking</h3><p>Core ideas behind computer networks and connectivity.</p><div class="date">June 1, 2023</div></article>
+          <article class="card cert-card"><div class="issuer">IBM · Coursera</div><h3>Generative AI: Prompt Engineering Basics</h3><p>Writing and improving prompts for generative AI tools.</p><div class="date">March 28, 2025</div></article>
+          <article class="card cert-card"><div class="issuer">IBM · Coursera</div><h3>Python for Data Science, AI & Development</h3><p>Python fundamentals with data science and AI applications.</p><div class="date">April 26, 2025</div></article>
+        </div>
+        <div class="hero-actions"><a class="btn primary" href="assets/certificates-portfolio.pdf" target="_blank" rel="noopener">View certificate presentation (PDF) ↗</a><a class="btn" href="assets/certificates-portfolio.pptx" download>Download certificate PowerPoint ↓</a><a class="btn" href="assets/certificates.pdf" target="_blank" rel="noopener">View original certificate pages ↗</a></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">04 / Mini projects</div><h2>Ideas for interactive systems</h2></div><p>The combined presentation explains three AI concepts and eight robotics or embedded-system tasks with examples, components, and suggested development steps.</p></div>
+        <div class="mini-grid">
+          <article class="card project-card tone-violet"><div class="project-top"><span class="project-num">AI CONCEPT 01</span><div class="iconbox">🐉</div></div><h3>AI Dungeon Master</h3><p>An interactive story game where AI responds to a player’s actions and keeps the adventure moving.</p><ul><li>Generate scenes and choices</li><li>Build a character and track inventory</li><li>Remember quests and game state</li></ul><div class="tags"><span class="tag">Story generation</span><span class="tag">Memory</span><span class="tag">User choices</span></div></article>
+          <article class="card project-card tone-cyan"><div class="project-top"><span class="project-num">AI CONCEPT 02</span><div class="iconbox">🎤</div></div><h3>Rap Battle Generator</h3><p>A creative text tool that generates verses based on a topic, style, and requested length.</p><ul><li>Prompt-based verse generation</li><li>Rhyme support and battle formats</li><li>Optional voice and beat playback</li></ul><div class="tags"><span class="tag">Text generation</span><span class="tag">Rhyme</span><span class="tag">Audio</span></div></article>
+          <article class="card project-card tone-green"><div class="project-top"><span class="project-num">AI CONCEPT 03</span><div class="iconbox">😄</div></div><h3>AI Meme Maker</h3><p>A web tool that combines image templates with AI-generated captions and user customisation.</p><ul><li>Select a template or upload an image</li><li>Generate top and bottom captions</li><li>Render and download the final meme</li></ul><div class="tags"><span class="tag">Image tools</span><span class="tag">Captions</span><span class="tag">Pillow/OpenCV</span></div></article>
+          <article class="card project-card"><div class="project-top"><span class="project-num">ROBOTICS TASK 01</span><div class="iconbox">💡</div></div><h3>Output Device Control</h3><p>Control LEDs, indicator lights, and warning signals using digital outputs.</p><ul><li>Traffic-light simulator</li><li>Server status panel</li><li>Plant moisture indicator</li></ul><div class="tags"><span class="tag">LED</span><span class="tag">GPIO</span></div><div class="card-links"><a class="textlink" href="https://wokwi.com/projects/458827337398061057" target="_blank" rel="noopener">Open Wokwi ↗</a></div></article>
+          <article class="card project-card"><div class="project-top"><span class="project-num">ROBOTICS TASK 02</span><div class="iconbox">🎚️</div></div><h3>Brightness & Speed Controller</h3><p>Change an output gradually, such as light intensity or fan speed.</p><ul><li>Sunrise alarm lamp</li><li>Temperature-controlled fan</li><li>Smart street lighting</li></ul><div class="tags"><span class="tag">PWM</span><span class="tag">Automation</span></div><div class="card-links"><a class="textlink" href="https://wokwi.com/projects/456225078295121921" target="_blank" rel="noopener">Open Wokwi ↗</a></div></article>
+          <article class="card project-card"><div class="project-top"><span class="project-num">ROBOTICS TASK 03</span><div class="iconbox">🕹️</div></div><h3>Button & Switch Interface</h3><p>Build a system that reacts to user input, toggles, and manual overrides.</p><ul><li>One-button on/off toggle</li><li>Irrigation override</li><li>RGB colour selector</li></ul><div class="tags"><span class="tag">Input</span><span class="tag">Debounce</span><span class="tag">State logic</span></div><div class="card-links"><a class="textlink" href="https://wokwi.com/projects/457703570878839809" target="_blank" rel="noopener">Open Wokwi ↗</a></div></article>
+          <article class="card project-card"><div class="project-top"><span class="project-num">ROBOTICS TASK 04</span><div class="iconbox">🔔</div></div><h3>Sound & Signal Alert</h3><p>Give clear audio or visual warnings when a condition needs attention.</p><ul><li>Door-open timer alarm</li><li>Threshold-based sensor alert</li><li>Morse-code buzzer patterns</li></ul><div class="tags"><span class="tag">Buzzer</span><span class="tag">Safety alerts</span></div></article>
+          <article class="card project-card"><div class="project-top"><span class="project-num">ROBOTICS TASK 05</span><div class="iconbox">📟</div></div><h3>Information Dashboard</h3><p>Show useful measurements and device status on a small display.</p><ul><li>Clock and weather station</li><li>Battery level indicator</li><li>Temperature and humidity view</li></ul><div class="tags"><span class="tag">LCD/OLED</span><span class="tag">I²C</span></div></article>
+          <article class="card project-card"><div class="project-top"><span class="project-num">ROBOTICS TASK 06</span><div class="iconbox">☀️</div></div><h3>Smart Environment Sensing</h3><p>Detect light, movement, or room occupancy and use the signal to automate a response.</p><ul><li>Automatic street lamp</li><li>Occupancy-based ventilation</li><li>Greenhouse blind controller</li></ul><div class="tags"><span class="tag">LDR</span><span class="tag">PIR</span><span class="tag">Sensors</span></div><div class="card-links"><a class="textlink" href="https://wokwi.com/projects/457703252830999553" target="_blank" rel="noopener">Open Wokwi ↗</a></div></article>
+          <article class="card project-card"><div class="project-top"><span class="project-num">ROBOTICS TASK 07</span><div class="iconbox">🌡️</div></div><h3>Environmental Parameter Monitor</h3><p>Track measurements over time and display or log useful information.</p><ul><li>Greenhouse climate monitor</li><li>Temperature logger</li><li>Comfort index display</li></ul><div class="tags"><span class="tag">DHT11</span><span class="tag">Thresholds</span><span class="tag">Logging</span></div></article>
+          <article class="card project-card"><div class="project-top"><span class="project-num">ROBOTICS TASK 08</span><div class="iconbox">⚙️</div></div><h3>Motion & Actuator Control</h3><p>Control mechanical movement with a servo, DC motor, or similar actuator.</p><ul><li>Solar-panel light tracker</li><li>Automatic door concept</li><li>Potentiometer-controlled servo</li></ul><div class="tags"><span class="tag">Servo</span><span class="tag">DC motor</span><span class="tag">PWM</span></div></article>
+        </div>
+        <div class="hero-actions"><a class="btn primary" href="assets/mini-projects-all.pptx" download>Download combined mini-project PowerPoint ↓</a><a class="btn" href="assets/mini-projects-all.pdf" target="_blank" rel="noopener">Read mini-project PDF ↗</a><a class="btn" href="https://abhijith-sivakumar-rekha.github.io/Smart-Home-Monitor/mini-projects.html" target="_blank" rel="noopener">Original interactive project gallery ↗</a></div>
+      </div>
+    </section>
+
+    <section id="odin">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">05 / The Odin Project</div><h2>Web development learning</h2></div><p>A beginner-friendly walk-through of the Intermediate HTML and CSS course topics, prepared for my Web Technologies studies.</p></div>
+        <div class="odin-feature">
+          <div class="odin-panel"><div class="eyebrow">Intermediate HTML & CSS</div><h3 style="font-size:1.55rem;letter-spacing:-.04em;margin:10px 0">From page structure to responsive layouts</h3><p class="muted">The presentation explains the concepts with simple examples and speaker notes. A second version has a full narration embedded in the PowerPoint.</p><div class="topic-list"><div class="topic">SVG graphics</div><div class="topic">HTML tables</div><div class="topic">CSS units & selectors</div><div class="topic">Positioning</div><div class="topic">Forms & validation</div><div class="topic">Flexbox & Grid</div><div class="topic">CSS functions</div><div class="topic">Responsive design</div></div><div class="card-links"><a class="textlink" href="https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css" target="_blank" rel="noopener">Open official course ↗</a></div></div>
+          <div class="card resource-card"><div><div class="iconbox">▶</div><h3>Presentation with audio narration</h3><p>Download the slides and play the narration from the opening slide in PowerPoint. The narration is one continuous track, so it is best to play it while following the slides.</p></div><div><a class="btn primary" href="assets/odin-intermediate-html-css-with-audio.pptx" download>Download narrated PowerPoint ↓</a><a class="btn" href="assets/odin-audio-transcript.txt" download>Read audio transcript ↓</a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">06 / CV</div><h2>My resume</h2></div><p>Open the latest CV from my separate CV repository.</p></div>
+        <div class="cv-panel"><div><h3>Abhijith Sivakumar Rekha — CV</h3><p>PDF resume hosted in my GitHub CV repository.</p><div class="tags"><span class="tag">Experience & education</span><span class="tag">Contact details</span><span class="tag">PDF</span></div></div><div class="hero-actions" style="margin-top:0"><a class="btn primary" href="https://github.com/Abhijith-Sivakumar-Rekha/CV/blob/main/abhi%202026%20feb%2025%20(2).pdf" target="_blank" rel="noopener">View CV on GitHub ↗</a></div></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">07 / Contact</div><h2>Let's connect</h2></div><p>For project questions, collaboration, or to see more of my learning work, visit my GitHub profile.</p></div>
+        <div class="contact-grid"><article class="contact-box"><div class="eyebrow">GitHub profile</div><h3>Code, projects, and learning</h3><p class="muted">Browse public repositories and project work.</p><div class="card-links"><a class="textlink" href="https://github.com/Abhijith-Sivakumar-Rekha" target="_blank" rel="noopener">github.com/Abhijith-Sivakumar-Rekha ↗</a></div></article><article class="contact-box"><div class="eyebrow">Portfolio resources</div><h3>Certificates and presentations</h3><p class="muted">Download the combined files directly from this page.</p><div class="card-links"><a class="textlink" href="#certificates">Certificates ↗</a><a class="textlink" href="#projects">Mini projects ↗</a><a class="textlink" href="#odin">Odin Project ↗</a></div></article></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-row"><span>© <span id="year"></span> Abhijith Sivakumar Rekha</span><span>Built with HTML, CSS, and JavaScript · Hosted with GitHub Pages</span><a class="textlink" href="#home">Back to top ↑</a></div></footer>
+  <a id="backtop" class="backtop" href="#home" aria-label="Back to top">↑</a>
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const backtop=document.getElementById('backtop');
+    window.addEventListener('scroll',()=>backtop.classList.toggle('show',window.scrollY>500));
+    const themePicker=document.getElementById('themePicker');
+    const allowedThemes=['sunshine','ocean','lavender','peach','mint','candy','citrus','berry','sky','tropical','rose-gold'];
+    function applyTheme(theme){
+      if(!allowedThemes.includes(theme)) theme='sunshine';
+      document.documentElement.dataset.theme=theme;
+      themePicker.value=theme;
+      const themeMeta=document.querySelector('meta[name="theme-color"]');
+      if(themeMeta){themeMeta.content=getComputedStyle(document.documentElement).getPropertyValue('--bg').trim()||'#fff9e7';}
+      try{localStorage.setItem('abhijithPortfolioTheme',theme);}catch(error){}
+    }
+    themePicker.addEventListener('change',()=>applyTheme(themePicker.value));
+    let savedTheme='sunshine';
+    try{savedTheme=localStorage.getItem('abhijithPortfolioTheme')||'sunshine';}catch(error){}
+    applyTheme(savedTheme);
+  </script>
+</body>
+</html>
