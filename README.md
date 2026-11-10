@@ -1,28 +1,78 @@
-# Abhijith Sivakumar Rekha — Colourful Portfolio
+# Abhijith Sivakumar Rekha — Portfolio Website
 
-A responsive personal portfolio built with HTML, CSS and JavaScript. It has **11 switchable light colour themes**; the visitor's choice is saved in their browser.
+This repository contains my personal developer portfolio website. It is designed as a recruiter-facing overview of my web-development learning, practical prototypes, certifications, The Odin Project progress, and CV — with the emphasis on evidence of what I can build rather than a simple list of courses.
 
-## Themes
-1. Sunshine  2. Ocean  3. Lavender  4. Peach  5. Mint  6. Candy
-7. Citrus  8. Berry  9. Sky  10. Tropical  11. Rose Gold
+## What the website includes
 
-## Preview locally
-Open `index.html` in any modern browser. Choose a theme from the menu at the top. The theme remains selected when the page is revisited on that browser.
+- Responsive personal portfolio homepage
+- Professional profile/CV photo
+- Recruiter-focused hero section and calls to action
+- Skills and learning areas
+- Certificates and learning resources
+- Featured projects separated into **prototypes** and **concepts**
+- Individual project case-study pages for interactive Wokwi prototypes
+- Live Wokwi simulator embeds and external simulator links
+- The Odin Project progress across:
+  - Intermediate HTML & CSS — 20 lessons, 2 projects
+  - JavaScript — 29 lessons, 12 projects
+  - Advanced HTML & CSS — 15 lessons, 1 project
+- 64 completed lessons and 15 projects across the three listed Odin courses
+- CV section linking to the latest CV repository
+- GitHub contact/profile links
+- Multiple selectable visual themes with saved theme preference
+- Keyboard-focus states and responsive layouts
+- Back-to-top control and lightweight JavaScript interactions
 
-## Publish as a NEW GitHub Pages site
-1. Create a new public GitHub repository, for example `abhijith-portfolio`.
-2. Upload the contents of this folder to the repository root (`index.html`, `README.md`, `START_HERE.txt`, and the `assets/` folder).
-3. Open **Settings → Pages**.
-4. Under Build and deployment, choose **Deploy from a branch**, set branch to `main`, folder to `/(root)`, and save.
-5. After deployment, the address should look like `https://abhijith-sivakumar-rekha.github.io/abhijith-portfolio/`.
+## Project case studies
 
-This package is separate from the existing Smart Home Monitor project and will not change it.
+The project section intentionally distinguishes completed/interactive prototypes from ideas that are still concepts. The four current prototype case studies are:
 
-## Downloads included in `assets/`
-- `certificates-portfolio.pptx` — combined certificate PowerPoint
-- `certificates-portfolio.pdf` — certificate PowerPoint as PDF
-- `certificates.pdf` — original certificate pages combined into one PDF
-- `mini-projects-all.pptx` and `mini-projects-all.pdf` — combined mini-project presentation
-- `ai-mini-projects.pptx` — AI-only mini-project presentation
-- `odin-intermediate-html-css-with-audio.pptx` — narrated HTML and CSS presentation
-- `odin-audio-transcript.txt` — narration text
+1. Output Device Control
+2. Brightness & Speed Controller
+3. Smart Environment Sensing
+4. Button & Switch Interface
+
+The case-study pages explain the purpose, input → controller → logic → output flow, technologies, practical directions, and provide the corresponding Wokwi simulator.
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+- Responsive web design
+- Accessibility-focused interaction patterns
+- Wokwi for embedded-system simulation
+- GitHub Pages for hosting
+
+## Repository structure
+
+```text
+.
+├── index.html
+├── case-study.css
+├── profile.jpg
+├── projects/
+│   ├── output-device-control.html
+│   ├── brightness-speed-controller.html
+│   ├── smart-environment-sensing.html
+│   └── button-switch-interface.html
+```
+
+## Local preview
+
+Open `index.html` in a browser, or use a simple local web server if you want to test embedded content and relative paths.
+
+## GitHub Pages
+
+The site is designed to work as a static GitHub Pages website. Upload the repository contents to the selected GitHub repository and configure GitHub Pages to deploy from the main branch/root directory.
+
+## Design goal
+
+The main goal is to make the website feel like a **developer portfolio**, not a course archive. Recruiters should be able to quickly see who I am, what technologies I am learning, what I have actually built, what is still a concept, and where they can interact with the work.
+
+## Author
+
+**Abhijith Sivakumar Rekha**
+
+GitHub: https://github.com/Abhijith-Sivakumar-Rekha
+Portfolio: https://abhijith-sivakumar-rekha.github.io/Portfolio/
