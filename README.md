@@ -1,78 +1,96 @@
-# Abhijith Sivakumar Rekha — Portfolio Website
+# Abhijith Sivakumar Rekha — Animated Portfolio
 
-This repository contains my personal developer portfolio website. It is designed as a recruiter-facing overview of my web-development learning, practical prototypes, certifications, The Odin Project progress, and CV — with the emphasis on evidence of what I can build rather than a simple list of courses.
+A recruiter-focused personal portfolio website designed to present projects, technical skills, learning evidence, and practical prototypes in an interactive visual format.
 
-## What the website includes
+## What this website does
 
-- Responsive personal portfolio homepage
-- Professional profile/CV photo
-- Recruiter-focused hero section and calls to action
-- Skills and learning areas
-- Certificates and learning resources
-- Featured projects separated into **prototypes** and **concepts**
-- Individual project case-study pages for interactive Wokwi prototypes
-- Live Wokwi simulator embeds and external simulator links
-- The Odin Project progress across:
-  - Intermediate HTML & CSS — 20 lessons, 2 projects
-  - JavaScript — 29 lessons, 12 projects
-  - Advanced HTML & CSS — 15 lessons, 1 project
-- 64 completed lessons and 15 projects across the three listed Odin courses
-- CV section linking to the latest CV repository
-- GitHub contact/profile links
-- Multiple selectable visual themes with saved theme preference
-- Keyboard-focus states and responsive layouts
-- Back-to-top control and lightweight JavaScript interactions
+This portfolio is built to answer a recruiter’s main questions quickly:
 
-## Project case studies
+- What can I build?
+- What technologies am I learning and using?
+- Which projects are working prototypes?
+- What evidence do I have of my learning?
+- Where can I see the code, live simulations, case studies, and CV?
 
-The project section intentionally distinguishes completed/interactive prototypes from ideas that are still concepts. The four current prototype case studies are:
+## Main sections
 
-1. Output Device Control
-2. Brightness & Speed Controller
-3. Smart Environment Sensing
-4. Button & Switch Interface
+- **Hero** — animated introduction with profile photo and quick portfolio statistics
+- **Selected Work** — featured embedded/technical projects with case-study pages and Wokwi simulations
+- **About** — development focus and technical direction
+- **Skills** — animated technology orbit
+- **Certificates** — formal learning record
+- **The Odin Project** — Intermediate HTML & CSS, JavaScript, and Advanced HTML & CSS marked as completed
+- **CV** — local CV PDF included in this package
+- **Contact** — GitHub and portfolio links
 
-The case-study pages explain the purpose, input → controller → logic → output flow, technologies, practical directions, and provide the corresponding Wokwi simulator.
+## Interactive features
+
+- Animated hero background and orbit effects
+- Scroll-reveal animations
+- Cursor-following glow
+- Magnetic buttons
+- 3D project-card tilt effects
+- Animated technology marquee
+- Interactive skill-orbit presentation
+- Responsive navigation and layouts
+- Reduced-motion support for accessibility
+- Mobile-responsive design
 
 ## Technologies
 
 - HTML5
 - CSS3
 - JavaScript
-- Responsive web design
-- Accessibility-focused interaction patterns
-- Wokwi for embedded-system simulation
-- GitHub Pages for hosting
+- GitHub Pages
+- Wokwi for embedded simulations
+
+## Project case studies
+
+The package includes:
+
+1. Output Device Control
+2. Brightness & Speed Controller
+3. Button & Switch Interface
+4. Smart Environment Sensing
+
+Each case study explains the project purpose, system flow, technologies, practical use, and prototype link.
 
 ## Repository structure
 
 ```text
-.
+Portfolio/
 ├── index.html
-├── case-study.css
+├── style.css
+├── script.js
 ├── profile.jpg
-├── projects/
-│   ├── output-device-control.html
-│   ├── brightness-speed-controller.html
-│   ├── smart-environment-sensing.html
-│   └── button-switch-interface.html
+├── case-study.css
+├── README.md
+├── assets/
+│   └── CV.pdf
+└── projects/
+    ├── output-device-control.html
+    ├── brightness-speed-controller.html
+    ├── button-switch-interface.html
+    └── smart-environment-sensing.html
 ```
 
-## Local preview
+## Run locally
 
-Open `index.html` in a browser, or use a simple local web server if you want to test embedded content and relative paths.
+Open `index.html` in a browser, or use VS Code Live Server for the best local development experience.
 
-## GitHub Pages
+## Deploy to GitHub Pages
 
-The site is designed to work as a static GitHub Pages website. Upload the repository contents to the selected GitHub repository and configure GitHub Pages to deploy from the main branch/root directory.
+Upload the contents of this folder to the root of the GitHub repository, commit the changes, and enable GitHub Pages from the repository's Pages settings using the `main` branch and root folder.
 
-## Design goal
+## Design direction
 
-The main goal is to make the website feel like a **developer portfolio**, not a course archive. Recruiters should be able to quickly see who I am, what technologies I am learning, what I have actually built, what is still a concept, and where they can interact with the work.
+The portfolio intentionally moves away from a basic student-template appearance. It uses large typography, motion, layered visuals, project storytelling, and evidence-first presentation so the site feels closer to a modern developer portfolio.
 
-## Author
+## Future improvements
 
-**Abhijith Sivakumar Rekha**
-
-GitHub: https://github.com/Abhijith-Sivakumar-Rekha
-Portfolio: https://abhijith-sivakumar-rekha.github.io/Portfolio/
+- Add screenshots/GIFs for each project
+- Add individual GitHub repository links for projects
+- Add more live demos
+- Add a dedicated contact form
+- Add project metrics and technical write-ups
+- Add a blog/project journal

@@ -1,0 +1,10 @@
+UPLOAD THIS FOLDER'S CONTENTS TO THE ROOT OF YOUR GITHUB PORTFOLIO REPOSITORY.
+
+Do NOT upload the ZIP file itself.
+
+Important:
+- index.html, style.css, script.js and profile.jpg must be in the repository root.
+- Keep the projects folder.
+- Keep the assets folder.
+- Commit all files together.
+- Then refresh GitHub Pages with Ctrl+F5.
